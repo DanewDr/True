@@ -17,7 +17,6 @@ namespace CookieMod.Buffs
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
-            player.AddBuff(mod.BuffType("Shaken"), 1); //this is an example of how to add your own buff
             player.statDefense -= 2;  //
       	    player.meleeDamage += .10f;
 	          player.meleeSpeed += .10f;
