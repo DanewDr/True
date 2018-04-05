@@ -26,7 +26,7 @@ namespace CookieMod.Items
             item.consumable = true;           //this make that the item is consumable when used
             item.width = 20;
             item.height = 25;
-            item.value = 100;                
+            item.value = 50;                
             item.rare = 1;
             item.buffType = mod.BuffType("Calcium");    //this is where you put your Buff
             item.buffTime = 20000;    //this is the buff duration        20000 = 6 min
