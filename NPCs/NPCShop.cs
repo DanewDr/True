@@ -13,10 +13,9 @@ namespace CookieMod.NPCs
             {
                 case NPCID.Merchant:  
                 {
-                    shop.item[nextSlot].SetDefaults(mod.ItemType("Milk"));
-                    nextSlot++;
-					shop.item[nextSlot].SetDefaults(mod.ItemType("CookBook"));
-					nextSlot++;
+		    shop.item[nextSlot].SetDefaults(mod.ItemType("CookBook"));
+		    shop.item[nextSlot].value = 50000;		
+		    nextSlot++;
                 }    
                 break;
             }
