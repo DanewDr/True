@@ -16,7 +16,6 @@ namespace CookieMod.Buffs
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
-            player.AddBuff(mod.BuffType("BrainFed"), 1); //this is an example of how to add your own buff
             CookDamagePlayer modPlayer = CookDamagePlayer.ModPlayer(player);
 			      modPlayer.cookDamage += 0.03f;
             modPlayer.cookCrit += 3;
