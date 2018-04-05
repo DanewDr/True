@@ -67,7 +67,7 @@ namespace CookieMod.NPCs
 			switch (WorldGen.genRand.Next(4))
 			{
 				case 0:
-					return "Gordon";
+					return "Zeff";
 				case 1:
 					return "Ramsay";
 				case 2:
@@ -93,16 +93,30 @@ namespace CookieMod.NPCs
 		public override string GetChat()
 		{
 			int dyeTrader = NPC.FindFirstNPC(NPCID.DyeTrader);
+			int partyGirl = NPC.FindFirstNPC(NPCID.PartyGirl);
+			int nurse = NPC.FindFirstNPC(NPCID.Nurse);
 			if (dyeTrader >= 0 && Main.rand.Next(4) == 0)
 			{
-				return "Please don't tell " + Main.npc[dyeTrader].GivenName + " I sell dye plants.";
+				return "Please don't tell " + Main.npc[dyeTrader].GivenName + " I sell dye ingredient foods.";
 			}
-			switch (Main.rand.Next(3))
+			if (partyGirl >= 0 && Main.rand.Next(4) == 0)
+			{
+				return "How is a guy supposed to cook with " + Main.npc[partyGirl].GivenName + " getting confetti all over my food!";
+			}
+			if (nurse >= 0 && Main.rand.Next(6) == 0)
+			{
+				return "Don't look at me! I'm not " + Main.npc[nurse].GivenName + ", go crying to her!";
+			}
+			switch (Main.rand.Next(5))
 			{
 				case 0:
 					return "I am the greatest chef in all the lands!";
 				case 1:
 					return "What is this 'Thorium Cook' you speak of?";
+				case 2:
+					return "Want to try my new cake recipe?";
+				case 3:
+					return "If you don't want to eat, that's fine with me. You'll scarecely get better than mud around here!";
 				default:
 					return "I don't have time to defend myself, I have food to cook!";
 			}
@@ -131,8 +145,6 @@ namespace CookieMod.NPCs
 			shop.item[nextSlot].SetDefaults(mod.ItemType("Milk"));
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("Batter"));
-			nextSlot++;
-			shop.item[nextSlot].SetDefaults(mod.ItemType("GrilledCheese"));
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("Wafer"));
 			nextSlot++;
@@ -165,11 +177,7 @@ namespace CookieMod.NPCs
 				shop.item[nextSlot].SetDefaults(mod.ItemType("Rot"));
 				nextSlot++;
 				shop.item[nextSlot].SetDefaults(mod.ItemType("RottenCookie"));
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(mod.ItemType("RottenSoup"));
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(mod.ItemType("BloodySoup"));
-				nextSlot++;					
+				nextSlot++;				
 				shop.item[nextSlot].SetDefaults(mod.ItemType("SharkSoup"));
 				nextSlot++;
 			}
@@ -190,8 +198,6 @@ namespace CookieMod.NPCs
 				shop.item[nextSlot].SetDefaults(mod.ItemType("Chocolate"));
 				nextSlot++;
 				shop.item[nextSlot].SetDefaults(mod.ItemType("ChocolateCookie"));
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(mod.ItemType("Smore"));
 				nextSlot++;			
 			}
 		}
