@@ -16,7 +16,7 @@ namespace CookieMod.Items
         {
             item.width = 20;
             item.height = 20;
-            item.value = 100;
+            item.value = 5;
             item.rare = 1;
             item.maxStack = 999;
 			item.ammo = item.type;
