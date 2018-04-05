@@ -1,0 +1,45 @@
+[The Cookie Mod (Food and Much More!) v0.5.0]
+
+Welcome to the Cookie Mod! This is a mod heavely influenced by the youtuber Happy Days (though non-Happy fans can find something to love aswell) developed currently by three people:
+Danew Dr
+Cookie Biscuit
+Warren Mark
+
+This mod is still work-in-progress so some things may not be completely balnced (*cough* values *cough*) and many sprites still need changing. We would love some more active spriters and/or coders to speed up development and overall make the mod better!
+Enough of me blabering away here's what the mod has instore,
+Now with:
+Enough content to take you all the way to hardmode
++ 227 total items inculding:
+	- 56 basic items (Including tools, accesories and buff "drinks")
+	- 38 pieces of armor
+	- 26 placeable items
+	- 104 weapons
++ A new class: the cook class (currently only has enough content until hardmode)
++ 1 new biome (that's kinda barren at the moment)
++ 3 bosses (with boss checklist support)
++ 9 new enemies (2 excluding boss spawned enemies)
+Changes to 3 vanilla items (bottled water, honey & bowl of soup)
+
+Version History:
+v0.5.0: Updated to tmodloader v0.10.1.3
+	Boss checklist Support
+	Merge with Cookie Biscuit's Biscuit mod
+	Added many new item set (enough to take you the whole way through pre-hardmode)
+	Added a new class: the cooking class (does culinary damage)
+	Various resprites
+	Removed 11 useless items
+	Added a total 151 new items
+	Cookie trees can now be planted!!!
+	Merchant now sells milk
+	Changed the way you get cookies
+	Changed the way you craft cookie items
+	Changed the mod name
+	And probably some more stuff I missed	
+v0.1.2: 100/500 Dowload Special!
+	Added a work-in-progress biome
+	Cookie Addict now spawns in the new biome
+	Added cookie trees (currently only grow at world gen)
+v0.1.1: Updated to tmodloader v0.9.1
+	Blood Cookie and Corrupt Cookie masks are now obtainable
+	Added to the mod Browser
+v0.1.0: First Alpha build of the mod

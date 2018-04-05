@@ -1,0 +1,9 @@
+author = Danew Dr and CookieBiscuit
+version = 0.5.0
+displayName = The Cookie Mod (Food & Much More!)
+homepage = http://forums.terraria.org/index.php?threads/cookie-mod.49824/
+hideCode = false
+hideResources = false
+includeSource = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
+includePDB = true
