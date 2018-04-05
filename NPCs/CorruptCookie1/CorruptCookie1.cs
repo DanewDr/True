@@ -23,8 +23,8 @@ namespace CookieMod.NPCs.CorruptCookie1
             npc.damage = 20;  //boss damage
             npc.defense = 16;    //boss defense
             npc.knockBackResist = 0f;
-            npc.width = 338;
-            npc.height = 170;
+            npc.width = 158;
+            npc.height = 72;
             animationType = NPCID.DemonEye;   //this boss will behavior like the DemonEye
             Main.npcFrameCount[npc.type] = 2;    //boss frame/animation 
             npc.value = Item.buyPrice(0, 5, 0, 0);

@@ -23,8 +23,8 @@ namespace CookieMod.NPCs.BloodCookie
             npc.damage = 40;  //boss damage
             npc.defense = 20;    //boss defense
             npc.knockBackResist = 0f;
-            npc.width = 338;
-            npc.height = 170;
+            npc.width = 126;
+            npc.height = 50;
             animationType = NPCID.Harpy;   //this boss will behavior like the DemonEye
             npc.value = Item.buyPrice(0, 5, 0, 0);
             npc.npcSlots = 1f;
