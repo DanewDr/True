@@ -9,14 +9,15 @@ This mod is still work-in-progress so some things may not be completely balnced 
 Enough of me blabering away here's what the mod has instore,
 Now with:
 Enough content to take you all the way to hardmode
-+ 227 total items inculding:
-	- 56 basic items (Including tools, accesories and buff "drinks")
-	- 38 pieces of armor
-	- 26 placeable items
-	- 104 weapons
++ 230 total items inculding:
+	61 basic items (Including tools, accesories and buff "drinks")
+	38 pieces of armor
+	26 placeable items
+	104 weapons
 + A new class: the cook class (currently only has enough content until hardmode)
 + 1 new biome (that's kinda barren at the moment)
 + 3 bosses (with boss checklist support)
++ 1 new town NPC (spawns in after EoC is defeated, sells more items after defeating pre-hardmode bosses)
 + 9 new enemies (2 excluding boss spawned enemies)
 Changes to 3 vanilla items (bottled water, honey & bowl of soup)
 
@@ -28,7 +29,7 @@ v0.5.0: Updated to tmodloader v0.10.1.3
 	Added a new class: the cooking class (does culinary damage)
 	Various resprites
 	Removed 11 useless items
-	Added a total 151 new items
+	Added a total 156 new items
 	Cookie trees can now be planted!!!
 	Merchant now sells milk
 	Changed the way you get cookies
