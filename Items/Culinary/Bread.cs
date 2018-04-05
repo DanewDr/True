@@ -21,7 +21,7 @@ namespace CookieMod.Items.Culinary
             item.width = 26;
             item.height = 24;
             item.damage = 12;
-            item.value = 100;
+            item.value = 2;
             item.rare = 1;
             item.maxStack = 999;
 	    item.consumable = true;
