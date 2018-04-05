@@ -46,7 +46,6 @@ namespace CookieMod.NPCs
 		{
 			if (spawnInfo.player.GetModPlayer<MyPlayer>(mod).ZoneCookieBiome);
 			{			
-				return Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 5.5f : 0f;
 				return !Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 0.5f : 0f;
 			}	
 		}
