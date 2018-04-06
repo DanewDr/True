@@ -138,13 +138,7 @@ namespace CookieMod.NPCs
 		{
 			shop.item[nextSlot].SetDefaults(mod.ItemType("DoughBall"));
 			nextSlot++;
-			shop.item[nextSlot].SetDefaults(mod.ItemType("Cheese"));
-			nextSlot++;
-			shop.item[nextSlot].SetDefaults(mod.ItemType("Bread"));
-			nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("Milk"));
-			nextSlot++;
-			shop.item[nextSlot].SetDefaults(mod.ItemType("Batter"));
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("Wafer"));
 			nextSlot++;
@@ -163,6 +157,12 @@ namespace CookieMod.NPCs
 				shop.item[nextSlot].SetDefaults(mod.ItemType("CactusSoup"));
 				nextSlot++;
 				shop.item[nextSlot].SetDefaults(mod.ItemType("SauteedMushroom"));			
+				nextSlot++;
+				shop.item[nextSlot].SetDefaults(mod.ItemType("Cheese"));
+				nextSlot++;
+				shop.item[nextSlot].SetDefaults(mod.ItemType("Bread"));
+				nextSlot++;
+				shop.item[nextSlot].SetDefaults(mod.ItemType("Batter"));
 				nextSlot++;
 			}
 			if (CookieModWorld.downedCookieBoss)
