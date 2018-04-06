@@ -14,7 +14,7 @@ namespace CookieMod.Items.Culinary
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Bread");
-			Tooltip.SetDefault("Not for the ducks!");
+			Tooltip.SetDefault("-Culinary Ingredient-");
 		}
         public override void SafeSetDefaults()
         {
