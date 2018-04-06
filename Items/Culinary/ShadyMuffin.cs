@@ -43,7 +43,7 @@ namespace CookieMod.Items.Culinary
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "DoughBall", 2);
-			recipe.AddIngredient(ItemID.TissueSample, 3);
+			recipe.AddIngredient(ItemID.ShadowScale, 3);
 			recipe.AddTile(TileID.Furnaces);			
 			recipe.SetResult(this, 2);
 			recipe.AddRecipe();
