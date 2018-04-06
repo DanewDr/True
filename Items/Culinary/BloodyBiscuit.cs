@@ -22,7 +22,7 @@ namespace CookieMod.Items.Culinary
 			item.height = 16;
       item.damage = 13;
       item.crit = 6;
-      item.UseSound = SoundID.Item3;
+      item.UseSound = SoundID.Item2;
 			item.maxStack = 30;
 			item.rare = 1;
 			item.consumable = true;
