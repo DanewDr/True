@@ -20,13 +20,10 @@ namespace CookieMod.Items.Culinary
         {
             item.width = 26;
             item.height = 24;
-            item.damage = 12;
             item.value = 2;
-            item.rare = 1;
+            item.rare = 0;
             item.maxStack = 999;
 	    item.consumable = true;
-	    item.shoot = mod.ProjectileType ("BreadLoaf");
-	    item.ammo = mod.ItemType("Cookie");
         }
         public override void AddRecipes()
         {
