@@ -33,7 +33,7 @@ namespace CookieMod.Projectiles
             }
             if (projectile.ai[0] > 12f)
             {
-			if (Main.rand.Next(1) == 0)
+			if (Main.rand.Next(2) == 0)
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Water"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
 			}
