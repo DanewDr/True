@@ -30,6 +30,7 @@ namespace CookieMod.Items.Culinary
       item.height = 30;
       item.buffType = mod.BuffType("BrainFed");
       item.buffTime = 7200;
+      item.consumable = true;
 		}
 		public override void AddRecipes()
 		{
