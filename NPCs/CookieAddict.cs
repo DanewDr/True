@@ -19,8 +19,8 @@ namespace CookieMod.NPCs
 		}
         public override void SetDefaults()
         {
-            npc.width = 42;
-            npc.height = 67;
+            npc.width = 40;
+            npc.height = 48;
             npc.damage = 10;
             npc.defense = 10;
             npc.lifeMax = 200;
@@ -52,7 +52,7 @@ namespace CookieMod.NPCs
         public override void NPCLoot()  //Npc drop
         {
             {
-                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DoughBall"), 2); //Item spawn
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DoughBall"), 8); //Item spawn
             }
 
         }
