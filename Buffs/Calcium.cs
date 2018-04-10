@@ -11,11 +11,11 @@ namespace CookieMod.Buffs
         {
             Main.buffNoTimeDisplay[Type] = false;
  			DisplayName.SetDefault("Calcium");
-			Description.SetDefault("Your bones defense feels like they have been increased by 10");
+			Description.SetDefault("Your bones are stronger!");
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
-            player.statDefense += 10;  //
+            player.statDefense += 2;  //
         }
     }
 }
