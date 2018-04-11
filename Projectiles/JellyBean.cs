@@ -38,6 +38,10 @@ namespace CookieMod.Projectiles
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Gel"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
 			}
-		}		
+		}
+		public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+       		 {
+			target.AddBuff(BuffID.Slimed, 600);
+      		  }
 	}
 }
