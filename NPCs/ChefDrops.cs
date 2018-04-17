@@ -14,7 +14,7 @@ namespace CookieMod.NPCs
                 if (Main.rand.Next(3) == 0) //this is the item rarity, so 4 is 1 in 5 chance that the npc will drop the item.
                 {
                     {
-                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType(“Egg”), Main.rand.Next(1, 3));
+                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Egg"), Main.rand.Next(1, 3));
                     }
                 }
             }
@@ -23,7 +23,7 @@ namespace CookieMod.NPCs
                 if (Main.rand.Next(2) == 0) //this is the item rarity, so 4 is 1 in 5 chance that the npc will drop the item.
                 {
                     {
-                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType(“Egg”), Main.rand.Next(2, 4));
+                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Egg"), Main.rand.Next(2, 4));
                     }
                 }
             }
@@ -32,7 +32,7 @@ namespace CookieMod.NPCs
                 if (Main.rand.Next(2) == 0) //this is the item rarity, so 4 is 1 in 5 chance that the npc will drop the item.
                 {
                     {
-                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType(“Egg”), Main.rand.Next(2, 4));
+                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Egg"), Main.rand.Next(2, 4));
                     }
                 }
             }
@@ -41,7 +41,7 @@ namespace CookieMod.NPCs
                 if (Main.rand.Next(1) == 0) //this is the item rarity, so 4 is 1 in 5 chance that the npc will drop the item.
                 {
                     {
-                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType(“Egg”), Main.rand.Next(3, 6));
+                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Egg"), Main.rand.Next(3, 6));
                     }
                 }
             }
