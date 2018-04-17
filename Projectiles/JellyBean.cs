@@ -22,7 +22,7 @@ namespace CookieMod.Projectiles
 			projectile.ignoreWater = false;
 			projectile.penetrate = 1;
 			projectile.width = 8;
-			projectile.height = 10;
+			projectile.height = 8;
 			projectile.extraUpdates = 1;
 		}
         public override void AI()
