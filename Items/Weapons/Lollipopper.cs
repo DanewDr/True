@@ -22,8 +22,8 @@ namespace CookieMod.Items.Weapons
 			item.crit = 4;
 			item.ranged = true;
 			item.noMelee = true;
-			item.width = 32;
-			item.height = 20;
+			item.width = 42;
+			item.height = 22;
 			item.rare = 2;
 			item.useTime = 20;
 			item.useAnimation = 20;
