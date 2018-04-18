@@ -15,7 +15,7 @@ namespace CookieMod.Items
         public override void SetDefaults()
         {
             item.width = 20;
-            item.height = 20;
+            item.height = 18;
             item.value = 100;
             item.rare = 3;
             item.maxStack = 999;
