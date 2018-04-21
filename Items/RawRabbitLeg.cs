@@ -1,4 +1,3 @@
-
 using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -10,7 +9,7 @@ using System.Text;
  
 namespace CookieMod.Items
 {
-    public class RawRabbitLeg : GlobalItem
+    public class RawRabbitLeg : CookClass
     {
 		public override void SetStaticDefaults()
 		{
