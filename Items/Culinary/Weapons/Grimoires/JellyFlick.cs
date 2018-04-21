@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CookieMod.Items.Culinary.Weapons
+namespace CookieMod.Items.Culinary.Weapons.Grimoires
 {
 	public class JellyFlick : CookClass 
 	{
