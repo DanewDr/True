@@ -8,9 +8,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
  
-namespace CookieMod.Items
+namespace CookieMod.Items.Culinary
 {
-    public class RawRabbitLeg : GlobalItem
+    public class RabbitLeg : CookClass
     {
 		public override void SetStaticDefaults()
 		{

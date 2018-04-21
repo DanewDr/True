@@ -9,7 +9,7 @@ using System.Text;
  
 namespace CookieMod.Items.Culinary
 {
-    public class Egg : ModItem
+    public class Egg : CookClass
     {
 		public override void SetStaticDefaults()
 		{
