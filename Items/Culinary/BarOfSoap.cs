@@ -9,12 +9,12 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Culinary
 {
-	public class BarOfSoup : CookClass
+	public class BarOfSoap : CookClass
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bar Of Soup");
-			Tooltip.SetDefault("What should it do?");
+			DisplayName.SetDefault("Bar Of Soap");
+			Tooltip.SetDefault("3% increased culinary crit chance");
 		}
 		public override void SafeSetDefaults()
 		{
@@ -26,7 +26,7 @@ namespace CookieMod.Items.Culinary
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
 			CookDamagePlayer modPlayer = CookDamagePlayer.ModPlayer(player);
-			modPlayer.cookDamage += 0.1f;
+			modPlayer.cookCrit += 6;
 		}
 		public override void AddRecipes()
 		{
