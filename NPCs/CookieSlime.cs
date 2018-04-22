@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,29 +9,29 @@ using Terraria.ModLoader;
 
 namespace CookieMod.NPCs
 {
-    public class CookieAddict : ModNPC
+    public class CookieSlime : ModNPC
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Cookie Addict");
-			Main.npcFrameCount[npc.type] = 3; // make sure to set this for your modnpcs.
+			DisplayName.SetDefault("Cookie Slime");
+			Main.npcFrameCount[npc.type] = 2; // make sure to set this for your modnpcs.
 		}
         public override void SetDefaults()
         {
             npc.width = 40;
-            npc.height = 48;
+            npc.height = 66;
             npc.damage = 10;
             npc.defense = 10;
-            npc.lifeMax = 150;
+            npc.lifeMax = 100;
             npc.HitSound = SoundID.NPCHit1;
             npc.DeathSound = SoundID.NPCDeath13;
             npc.value = 60f;
             npc.knockBackResist = 0.5f;
-            npc.aiStyle = 3;
-            aiType = NPCID.Zombie;  //npc behavior
-            animationType = NPCID.Zombie;
+            npc.aiStyle = 1;
+            aiType = NPCID.BlueSlime;  //npc behavior
+            animationType = NPCID.BlueSlime;
         }
-		 public override void HitEffect(int hitDirection, double damage)
+/*		 public override void HitEffect(int hitDirection, double damage)
         {
             if (npc.life <= 0)          //this make so when the npc has 0 life(dead) he will spawn this
             {
@@ -41,18 +40,18 @@ namespace CookieMod.NPCs
                 Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/Addict3"), 1f);
 				Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/Addict4"), 1f);
             }
-        }
+        }*/
 		public override float SpawnChance (NPCSpawnInfo spawnInfo)		
 		{
 			if (spawnInfo.player.GetModPlayer<MyPlayer>(mod).ZoneCookieBiome);
-			{			
-				return !Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 0.5f : 0f;
+			{
+				return NPC.downedBoss1 && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 1.4f : 0f;
 			}	
 		}
         public override void NPCLoot()  //Npc drop
         {
             {
-                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DoughBall"), 8); //Item spawn
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Cookie"), Main.rand.Next (1, 4)); //Item spawn
             }
 
         }
