@@ -17,7 +17,7 @@ namespace CookieMod.Items.Culinary.Weapons
 		}
         public override void SafeSetDefaults()
         {
-            item.damage = 16;
+            item.damage = 13;
             item.melee = true;
             item.width = 30;
             item.height = 30;
