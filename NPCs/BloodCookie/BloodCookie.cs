@@ -19,9 +19,9 @@ namespace CookieMod.NPCs.BloodCookie
         public override void SetDefaults()
         {
             npc.aiStyle = 4;  //5 is the flying AI
-            npc.lifeMax = 4000;   //boss life
+            npc.lifeMax = 8000;   //boss life
             npc.damage = 40;  //boss damage
-            npc.defense = 20;    //boss defense
+            npc.defense = 30;    //boss defense
             npc.knockBackResist = 0f;
             npc.width = 126;
             npc.height = 50;
