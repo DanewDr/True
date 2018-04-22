@@ -14,7 +14,7 @@ namespace CookieMod.Items.Culinary
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Oven Mit");
-			Tooltip.SetDefault("10% increased culinary damage - change?");
+			Tooltip.SetDefault("Heats up your hands" + "\n10% increased culinary damage");
 		}
 		public override void SafeSetDefaults()
 		{
@@ -27,6 +27,9 @@ namespace CookieMod.Items.Culinary
 		{
 			CookDamagePlayer modPlayer = CookDamagePlayer.ModPlayer(player);
 			modPlayer.cookDamage += 0.1f;
+			player.buffImmune[46] = true;
+		    	player.buffImmune[47] = true;
+			player.magmaStone = true;
 		}
 		public override void AddRecipes()
 		{
