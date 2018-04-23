@@ -14,7 +14,7 @@ namespace CookieMod.Items.Culinary
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Grilled Cheese");
-			Tooltip.SetDefault("Crunchy and cheesy...");
+			Tooltip.SetDefault("Crunchy and cheesy…<right> to eat!");
 		}
         public override void SafeSetDefaults()
         {
@@ -37,5 +37,13 @@ namespace CookieMod.Items.Culinary
             recipe.SetResult(this, 6);
             recipe.AddRecipe();
         }
+		public override bool CanRightClick()
+		{
+			return true;
+		}
+		public override void RightClick(Player player)
+		{
+			player.AddBuff(BuffID.WellFed, 108000);
+		}
     }
 }

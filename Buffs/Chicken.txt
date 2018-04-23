@@ -1,0 +1,25 @@
+using System;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+ 
+namespace CookieMod.Buffs
+{
+    public class Chicken : ModBuff
+    {
+        public override void SetDefaults()
+        {
+            Main.buffNoTimeDisplay[Type] = false;
+ 			DisplayName.SetDefault("Chicken");
+			Description.SetDefault("You occasionally lay eggs!");
+			Main.debuff[Type] = false;
+        }
+        public override void Update(Player player, ref int buffIndex)
+        {                                             //
+				if(Main.myPlayer == player.whoAmI && Main.time % 1000 == 0)
+				{
+					player.QuickSpawnItem(mod.ItemType<Items.Culinary.Egg>());
+				}
+        }
+    }
+}

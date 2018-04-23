@@ -13,8 +13,8 @@ namespace CookieMod.Items.Culinary.Weapons.Grimoires
 	{
 		public override void SetStaticDefaults()  
 		{
-			DisplayName.SetDefault("Chef's Grimoire - Jelly Flick");
-			Tooltip.SetDefault("Grants the knowledge to flick jelly beans at astonishing speeds!");
+			DisplayName.SetDefault("Chef's Grimoire - Bean Flick");
+			Tooltip.SetDefault("Grants the knowledge to flick beans at astonishing speeds!");
 		}
 		public override void SafeSetDefaults()  
 		{

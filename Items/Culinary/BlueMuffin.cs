@@ -15,7 +15,7 @@ namespace CookieMod.Items.Culinary
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Blueberry Muffin");
-			Tooltip.SetDefault("Can be fried with a frying pan");
+			Tooltip.SetDefault("Toasty, <right> to eat!");
 		}
         public override void SafeSetDefaults()
         {
@@ -39,5 +39,13 @@ namespace CookieMod.Items.Culinary
             recipe.SetResult(this, 2);
             recipe.AddRecipe();
         }
+		public override bool CanRightClick()
+		{
+			return true;
+		}
+		public override void RightClick(Player player)
+		{
+			player.AddBuff(BuffID.WellFed, 54000);
+		}
     }
 }

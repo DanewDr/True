@@ -15,7 +15,7 @@ namespace CookieMod.Items.Culinary
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Cooked Rabbit Leg");
-			Tooltip.SetDefault("Who could even think of cooking this?!");
+			Tooltip.SetDefault("Grants rabbit instincts, <right> to eat!");
 		}
         public override void SafeSetDefaults()
         {
@@ -39,5 +39,13 @@ namespace CookieMod.Items.Culinary
             recipe.SetResult(this, 3);
             recipe.AddRecipe();
         }
+		public override bool CanRightClick()
+		{
+			return true;
+		}
+		public override void RightClick(Player player)
+		{
+			player.AddBuff(mod.BuffType("RabbitFoot"), 3600);
+		}
     }
 }
