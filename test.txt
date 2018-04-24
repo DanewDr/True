@@ -32,8 +32,6 @@ namespace CookieMod.Items.Culinary
         item.holdStyle = 1;
 			item.shoot = mod.ProjectileType ("ShadyMuffin");
 			item.ammo = mod.ItemType("Cookie");
-        item.buffType = mod.BuffType("WarmCozy");
-        item.buffTime = 1800;
 		}
 
 		public override void AddRecipes()
@@ -56,12 +54,11 @@ namespace CookieMod.Items.Culinary
 		}
 		public override bool CanUseItem(Player player)
 		{
+			if(player.altFunctionUse != 2)
+			{
+				player.AddBuff(BuffID.Wet, 7200);
+			}
 			return player.altFunctionUse != 2;
-		}
-		public override bool UseItem(Player player)
-		{
-     			player.AddBuff(BuffID.Wet, 7200);
-			return true;
 		}
 		
 	}
