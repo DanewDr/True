@@ -1,0 +1,68 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
+
+namespace CookieMod.Items.Culinary
+{
+	public class ShadyMuffin : CookClass
+	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Shady Muffin");
+			Tooltip.SetDefault("30 second duration");
+		}
+		public override void SafeSetDefaults()
+		{
+	item.UseSound = SoundID.Item3;
+        item.useStyle = 2;
+        item.useTurn = true;
+        item.useAnimation = 17;
+        item.useTime = 17;
+        item.maxStack = 30;
+        item.width = 10;
+        item.height = 10;
+	item.consumable = true;
+        item.value = 200;
+        item.holdStyle = 1;
+			item.shoot = mod.ProjectileType ("ShadyMuffin");
+			item.ammo = mod.ItemType("Cookie");
+        item.buffType = mod.BuffType("WarmCozy");
+        item.buffTime = 1800;
+		}
+
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(null, "DoughBall", 2);
+			recipe.AddIngredient(ItemID.ShadowScale, 3);
+			recipe.AddTile(TileID.Furnaces);			
+			recipe.SetResult(this, 2);
+			recipe.AddRecipe();
+		}
+		public override bool AltFunctionUse(Player player)
+		{
+			return true;
+		}
+		
+		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+		{
+			return player.altFunctionUse == 2;
+		}
+		public override bool CanUseItem(Player player)
+		{
+			return player.altFunctionUse != 2;
+		}
+		public override bool UseItem(Player player)
+		{
+     			player.AddBuff(BuffID.Wet, 7200);
+			return true;
+		}
+		
+	}
+}
