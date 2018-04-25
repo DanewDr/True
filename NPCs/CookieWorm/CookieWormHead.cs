@@ -22,7 +22,7 @@ namespace CookieMod.NPCs.CookieWorm
         public override void SetDefaults()
         {
             npc.lifeMax = 100;        //this is the npc health
-            npc.damage = 2;    //this is the npc damage
+            npc.damage = 30;    //this is the npc damage
             npc.defense = 17;         //this is the npc defense
             npc.knockBackResist = 0f;
             npc.width = 10; //this is where you put the npc sprite width.     important

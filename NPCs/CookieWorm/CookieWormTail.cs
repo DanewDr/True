@@ -17,7 +17,7 @@ namespace CookieMod.NPCs.CookieWorm
         {
             npc.width = 10;     //this is where you put the npc sprite width.     important
             npc.height = 10;      //this is where you put the npc sprite height.   important
-            npc.damage = 3;
+            npc.damage = 18;
             npc.defense = 5;
             npc.lifeMax = 1;
             npc.knockBackResist = 0.0f;
