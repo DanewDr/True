@@ -33,7 +33,7 @@ namespace CookieMod.Items
  		public override bool UseItem(Player player)
 		{
 			Main.PlaySound(15, (int)player.position.X, (int)player.position.Y, 0);
-			Main.NewText("<Corrupt Cookie>: How dare you eat my cookie, prepare to die!", (byte)146, (byte)101, (byte)15, false);
+			Main.NewText("<Corrupt Cookie> How dare you eat my cookie, prepare to die!", (byte)146, (byte)101, (byte)15, false);
 			NPC.SpawnOnPlayer(player.whoAmI, mod.NPCType("CorruptCookie1"));
 			return true;
 		}

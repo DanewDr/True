@@ -34,7 +34,7 @@ namespace CookieMod.Items
  		public override bool UseItem(Player player)
 		{
 			Main.PlaySound(15, (int)player.position.X, (int)player.position.Y, 0);
-			Main.NewText("<Blood Cookie>: I shall consuming your blood, fool!", (byte)146, (byte)101, (byte)15, false);
+			Main.NewText("<Blood Cookie> I shall consume your blood, fool!", (byte)146, (byte)101, (byte)15, false);
 			NPC.SpawnOnPlayer(player.whoAmI, mod.NPCType("BloodCookie"));
 			return true;
 		}
