@@ -34,7 +34,7 @@ namespace CookieMod.NPCs
                 if (Main.rand.Next(1) == 0) 
                 {
                     {
-                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("SugarDust"), Main.rand.Next(3, 15));
+                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("SugarDust"), Main.rand.Next(1, 3));
                     }
                 }
             }
