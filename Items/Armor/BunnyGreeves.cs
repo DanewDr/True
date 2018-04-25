@@ -19,7 +19,7 @@ namespace CookieMod.Items.Armor
 			item.height = 18;
 			item.value = 35;
 			item.rare = 2;
-			item.defense = 4;
+			item.defense = 3;
 		}
 		public override void UpdateEquip(Player player)
 		{

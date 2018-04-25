@@ -18,7 +18,7 @@ namespace CookieMod.Items.Armor
 			item.height = 26;
 			item.value = 2500;
 			item.rare = 2;
-			item.defense = 4;
+			item.defense = 2;
 		}
 
 		public override bool IsArmorSet(Item head, Item body, Item legs)
