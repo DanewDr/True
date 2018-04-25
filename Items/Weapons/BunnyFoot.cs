@@ -15,7 +15,7 @@ namespace CookieMod.Items.Weapons
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 16;
+			item.damage = 9;
 			item.summon = true;
 			item.mana = 10;
 			item.width = 40;
