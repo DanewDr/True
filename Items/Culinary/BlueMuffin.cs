@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Terraria;
  
 namespace CookieMod.Items.Culinary
 {
@@ -15,7 +16,7 @@ namespace CookieMod.Items.Culinary
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Blueberry Muffin");
-			Tooltip.SetDefault("Just like grandma used to make.");
+			Tooltip.SetDefault("Minor improvements to all stats /n`Just like grandma used to make.`");
 		}
         public override void SafeSetDefaults()
         {
