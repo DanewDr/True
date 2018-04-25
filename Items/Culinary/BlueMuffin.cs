@@ -15,7 +15,7 @@ namespace CookieMod.Items.Culinary
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Blueberry Muffin");
-			Tooltip.SetDefault("Toasty, <right> to eat!");
+			Tooltip.SetDefault("Just like grandma used to make.");
 		}
         public override void SafeSetDefaults()
         {
@@ -26,26 +26,37 @@ namespace CookieMod.Items.Culinary
             item.value = 75;
             item.rare = 1;
             item.maxStack = 999;
-			      item.consumable = true;
-			      item.ammo = mod.ItemType("Cookie");
+	    item.consumable = true;
+	    item.ammo = mod.ItemType("Cookie");
             item.shoot = mod.ProjectileType ("BlueMuffin");
+	    item.useAnimation = 17;
+            item.useTime = 17;
+	    item.useStyle = 2;
         }
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "DoughBall", 4);
             recipe.AddIngredient(ItemID.BlueBerries);
-			      recipe.AddTile(TileID.CookingPots);
+	    recipe.AddTile(TileID.CookingPots);
             recipe.SetResult(this, 2);
             recipe.AddRecipe();
         }
-		public override bool CanRightClick()
-		{
-			return true;
-		}
-		public override void RightClick(Player player)
+	public override bool AltFunctionUse(Player player)
+	{
+		return true;
+	}
+	public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int 		    type, ref int damage, ref float knockBack)
+	{
+		return player.altFunctionUse == 2;
+	}
+	public override bool CanUseItem(Player player)
+	{
+		if(player.altFunctionUse != 2)
 		{
 			player.AddBuff(BuffID.WellFed, 54000);
 		}
+		return player.altFunctionUse != 2;
+	}
     }
 }
