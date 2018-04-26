@@ -16,7 +16,9 @@ namespace CookieMod.Tiles
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
 			Main.tileLighted[Type] = true;
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
+            TileObjectData.newTile.CopyFrom(TileObjectData.StyleOnTable1x1);
+			TileObjectData.newTile.Width = 2;
+			TileObjectData.newTile.Height = 2;			
 			TileObjectData.newTile.Origin = new Point16(1, 0);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
 //			name.SetDefault("Crunch Candelabra");			

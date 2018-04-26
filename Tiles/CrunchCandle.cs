@@ -16,7 +16,7 @@ namespace CookieMod.Tiles
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
 			Main.tileLighted[Type] = true;
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style1x1);
+            TileObjectData.newTile.CopyFrom(TileObjectData.StyleOnTable1x1);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
 //			name.SetDefault("Crunch Candle");			
 //            AddMapEntry(new Color(172, 119, 14), name);
