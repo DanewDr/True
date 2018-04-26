@@ -26,7 +26,7 @@ namespace CookieMod
             }
             tasks.Insert(genIndex + 1, new PassLegacy("Cookie Biome", delegate (GenerationProgress progress)
             {
-                progress.Message = "Adding some cookie-fied dirt";
+                progress.Message = "Adding some cookie dirt";
                 for (int i = 0; i < Main.maxTilesX / 2600; i++)       //900 is how many biomes. the bigger is the number = less biomes
                 {
                     int X = WorldGen.genRand.Next(Main.maxTilesX);
@@ -41,6 +41,9 @@ namespace CookieMod
 		public override void TileCountsAvailable(int[] tileCounts)
         {
             customBiome = tileCounts[mod.TileType("CookieDirtTile")];       //this make the public static int customBiome counts as customtileblock
+			customBiome = tileCounts[mod.TileType("CreamIce")];
+			customBiome = tileCounts[mod.TileType("Creamstone")];
+			customBiome = tileCounts[mod.TileType("SugarSand")];			
         }
         public static bool spawnSugar = false;
         public static bool spawnCookie = false;
