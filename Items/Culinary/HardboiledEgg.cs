@@ -31,13 +31,13 @@ namespace CookieMod.Items.Culinary
             item.rare = 0;
             item.maxStack = 999;
 	}   
-        public override void AddRecipes()
+/*        public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "Egg", 5);
 	    recipe.AddIngredient(null, "Rot", 1);
 	    recipe.SetResult(ItemID.RottenHardboiledEgg, 5);
             recipe.AddRecipe();
-        }
+        }*/
     }
 }
