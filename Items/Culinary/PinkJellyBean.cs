@@ -27,17 +27,13 @@ namespace CookieMod.Items.Culinary
 			item.rare = 1;
 			item.consumable = true;
       		item.value = 100;
+			item.useAnimation = 17;
+        	item.useTime = 17;
+			item.useStyle = 2;
 			item.shoot = mod.ProjectileType ("PinkJellyBean");
 			item.ammo = mod.ItemType("JellyBean");
-		}
-		public override bool CanRightClick()
-		{
-			return true;
-		}
-
-		public override void RightClick(Player player)
-		{
-			player.AddBuff(BuffID.Lovestruck, 600);
+			item.buffType = BuffID.Lovestruck;
+			item.buffTime = 600;
 		}
 		public override void AddRecipes()
 		{
@@ -46,6 +42,10 @@ namespace CookieMod.Items.Culinary
 			recipe.AddTile(TileID.CookingPots);			
 			recipe.SetResult(this, 9);
 			recipe.AddRecipe();
+		}
+		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int 		    type, ref int damage, ref float knockBack)
+		{
+			return false;
 		}
 	}
 }

@@ -26,26 +26,26 @@ namespace CookieMod.Items.Culinary
 			item.rare = 1;
 			item.consumable = true;
       		item.value = 400;
+			item.useAnimation = 17;
+        	item.useTime = 17;
+			item.useStyle = 2;
 			item.shoot = mod.ProjectileType ("RottenSoup");
 			item.ammo = mod.ItemType("BloodySoup");
-		}
-		public override bool CanRightClick()
-		{
-			return true;
-		}
-
-		public override void RightClick(Player player)
-		{
-			player.AddBuff(mod.BuffType("FoodPoisoning"), 2700);
+			item.buffType = mod.BuffType("FoodPoisoning");
+			item.buffTime = 2700;
 		}
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.Bowl);
 			recipe.AddIngredient(ItemID.VileMushroom);
-     			recipe.AddIngredient(ItemID.RottenChunk);
+     		recipe.AddIngredient(ItemID.RottenChunk);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
+		}
+		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int 		    type, ref int damage, ref float knockBack)
+		{
+			return false;
 		}
 	}
 }

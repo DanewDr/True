@@ -23,7 +23,7 @@ namespace CookieMod.Items.Culinary
             item.value = 2;
             item.rare = 0;
             item.maxStack = 999;
-	    item.consumable = true;
+	        item.consumable = true;
         }
         public override void AddRecipes()
         {

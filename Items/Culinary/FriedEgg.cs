@@ -20,10 +20,10 @@ namespace CookieMod.Items.Culinary
         public override void SafeSetDefaults()
         {
             item.damage = 8;
-	          item.consumable = true;
-	          item.shoot = mod.ProjectileType ("EggYolk");
-	          item.ammo = mod.ItemType("Batter");
-	          item.width = 16;
+            item.consumable = true;
+            item.shoot = mod.ProjectileType ("EggYolk");
+            item.ammo = mod.ItemType("Batter");
+            item.width = 16;
             item.height = 16;
             item.value = 50;
             item.rare = 0;
@@ -33,7 +33,7 @@ namespace CookieMod.Items.Culinary
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "Egg", 5);
-	    recipe.SetResult(this, 5);
+	        recipe.SetResult(this, 5);
             recipe.AddRecipe();
         }
     }

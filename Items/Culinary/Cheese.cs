@@ -24,14 +24,14 @@ namespace CookieMod.Items.Culinary
             item.value = 10;
             item.rare = 2;
             item.maxStack = 999;
-			      item.consumable = true;
+			item.consumable = true;
             item.value = 200;
         }
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "Milk");
-			      recipe.AddTile(TileID.CookingPots);
+			recipe.AddTile(TileID.CookingPots);
             recipe.SetResult(this, 3);
             recipe.AddRecipe();
         }

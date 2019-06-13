@@ -27,37 +27,27 @@ namespace CookieMod.Items.Culinary
             item.value = 75;
             item.rare = 1;
             item.maxStack = 999;
-	    item.consumable = true;
-	    item.ammo = mod.ItemType("Cookie");
+			item.consumable = true;
+			item.ammo = mod.ItemType("Cookie");
             item.shoot = mod.ProjectileType ("BlueMuffin");
-	    item.useAnimation = 17;
+	   	 	item.useAnimation = 17;
             item.useTime = 17;
-	    item.useStyle = 2;
+	    	item.useStyle = 2;
+			item.buffType = BuffID.WellFed;
+			item.buffTime = 54000;
         }
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "DoughBall", 4);
             recipe.AddIngredient(ItemID.BlueBerries);
-	    recipe.AddTile(TileID.CookingPots);
+	    	recipe.AddTile(TileID.CookingPots);
             recipe.SetResult(this, 2);
             recipe.AddRecipe();
         }
-	public override bool AltFunctionUse(Player player)
-	{
-		return true;
-	}
-	public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int 		    type, ref int damage, ref float knockBack)
-	{
-		return player.altFunctionUse == 2;
-	}
-	public override bool CanUseItem(Player player)
-	{
-		if(player.altFunctionUse != 2)
+		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int 		    type, ref int damage, ref float knockBack)
 		{
-			player.AddBuff(BuffID.WellFed, 54000);
+			return false;
 		}
-		return player.altFunctionUse != 2;
-	}
     }
 }

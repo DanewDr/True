@@ -21,11 +21,11 @@ namespace CookieMod.Items.Culinary
         {
             item.damage = 4;
             item.thrown = true;
-	          item.consumable = true;
-	          item.shoot = mod.ProjectileType ("HardboiledEgg");
-	          item.ammo = mod.ItemType("Batter");
-	          item.width = 20;
-		item.crit = 12;
+            item.consumable = true;
+            item.shoot = mod.ProjectileType ("HardboiledEgg");
+            item.ammo = mod.ItemType("Batter");
+            item.width = 20;
+		    item.crit = 12;
             item.height = 26;
             item.value = 50;
             item.rare = 0;

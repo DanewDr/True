@@ -21,20 +21,20 @@ namespace CookieMod.Items.Culinary
         {
             item.damage = 6;
             item.thrown = true;
-	          item.consumable = true;
-	          item.shoot = mod.ProjectileType ("Egg");
-	          item.width = 20;
+	        item.consumable = true;
+	        item.shoot = mod.ProjectileType ("Egg");
+	        item.width = 20;
             item.height = 26;
             item.value = 50;
             item.rare = 0;
             item.maxStack = 999;
-	}   
+	    }   
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "Egg", 5);
-	    recipe.AddIngredient(null, "Rot", 1);
-	    recipe.SetResult(ItemID.RottenEgg, 5);
+            recipe.AddIngredient(null, "Rot", 1);
+            recipe.SetResult(ItemID.RottenEgg, 5);
             recipe.AddRecipe();
         }
     }
