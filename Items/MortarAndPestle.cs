@@ -15,7 +15,7 @@ namespace CookieMod.Items
 			DisplayName.SetDefault("Mortar And Pestle");
 			Tooltip.SetDefault("Allows for the grinding of foods");
 		}
-        public override void SetDefaults()
+        public override void SafeSetDefaults()
         {
             item.useStyle = 1;                 //this is how the item is holded when used
 		item.damage = 12;
