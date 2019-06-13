@@ -1,7 +1,7 @@
 author = Danew Dr and CookieBiscuit
-version = 0.5.0
+version = 0.5.1
 displayName = The Cookie Mod (Food & Much More!)
-homepage = http://forums.terraria.org/index.php?threads/cookie-mod.49824/
+homepage = https://discord.gg/ejQK7HH
 hideCode = false
 hideResources = false
 includeSource = true
