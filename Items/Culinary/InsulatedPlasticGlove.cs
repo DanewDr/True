@@ -31,7 +31,7 @@ namespace CookieMod.Items.Culinary
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "BarOfSoup");
+			recipe.AddIngredient(null, "BarOfSoap");
 			recipe.AddIngredient(null, "OvenMit");
 			recipe.AddTile(TileID.TinkerersWorkbench);			
 			recipe.SetResult(this);
