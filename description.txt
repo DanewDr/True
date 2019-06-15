@@ -1,4 +1,10 @@
-[The Cookie Mod (Food and Much More!) v0.5.0]
+[The Cookie Mod (Food and Much More!) v0.5.1]
+
+*IMPORTANT ANOUNCEMENT*
+After much discussion amongst the dev team, we have decided that the mod is in need of a complete overhaul and, put simply, restart. We have many reasons for this which will be discussed further both on the discord and forum page. Also on the discord you can find the complete changelog for this update
+The forum page and discord will keep a copy of this version of the mod once the first version of the restart is released
+The rest of the description will remain slightly outdated, especially regarding specific numbers
+Thankyou for all your support over the years, and we can't wait so see where the mod goes into the future!
 
 Welcome to the Cookie Mod! This is a mod heavely influenced by the youtuber Happy Days (though non-Happy fans can find something to love aswell) developed currently by three people:
 Danew Dr
@@ -22,6 +28,7 @@ Enough content to take you all the way to hardmode
 Changes to 3 vanilla items (bottled water, honey & bowl of soup)
 
 Version History:
+v0.5.1: Changelog Avaliable on the discord
 v0.5.0: Updated to tmodloader v0.10.1.3
 	Boss checklist Support
 	Merge with Cookie Biscuit's Biscuit mod
