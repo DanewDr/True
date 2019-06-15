@@ -32,8 +32,8 @@ namespace CookieMod.Items.Culinary
 			item.useStyle = 2;
 			item.shoot = mod.ProjectileType ("BloodyBiscuit");
 			item.ammo = mod.ItemType("Cookie");
-			item.buffType = mod.BuffType("FoodPoisoning")
-			item.buffTime = 5400
+			item.buffType = mod.BuffType("FoodPoisoning");
+			item.buffTime = 5400;
 		}
 		public override void AddRecipes()
 		{
